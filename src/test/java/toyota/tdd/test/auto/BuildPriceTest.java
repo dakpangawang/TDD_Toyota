@@ -10,7 +10,10 @@ public class BuildPriceTest extends BaseClass{
 	public void buldAndPriceTest() {
 		landingPage.validateLandingPageTitle("Explore All Vehicles");
 		landingPage.clickBuildAndPrice();
-		
+		setYourLocation.validateSetYourLocationPageTitle("SET YOUR LOCATION");
+		setYourLocation.enterZipCode();
+		setYourLocation.clickSubmit();
+		buildYourToyotaPage.validateBuildYourToyotaPageTitle("Build Your Toyota");
 	}
 
 }

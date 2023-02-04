@@ -7,8 +7,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -16,41 +14,44 @@ import static toyota.tdd.utils.IConstant.*;
 
 import java.time.Duration;
 
+import toyota.tdd.objects.BuildYourToyotaPage;
+import toyota.tdd.objects.FindADealerPage;
 import toyota.tdd.objects.LandingPage;
+import toyota.tdd.objects.SetYourLocation;
 import toyota.tdd.utils.ReadProperties;
 
 public class BaseClass {
-	
+
 	protected WebDriver driver;
 	protected LandingPage landingPage;
-	ReadProperties enVar;
-	
-	@BeforeSuite
-	public void setUpSuite() {
-		enVar = new ReadProperties();
-	}
-	
-	@BeforeMethod   // pre-condition
+	protected SetYourLocation setYourLocation;
+	protected BuildYourToyotaPage buildYourToyotaPage;
+	protected FindADealerPage findADealerPage;
+	ReadProperties enVar = new ReadProperties();
+
+	@BeforeMethod // pre-condition
 	public void setUpDriver() {
 		String browser = enVar.getProperty(BROWSER);
 		String url = enVar.getProperty(URL);
 		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
 		long implicitlyWait = enVar.getNumProperty(IMPLICIT_Wait);
-		
+
 		initDriver(browser);
 		initClasses(driver);
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadWait));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
-		
-		
+
 	}
-	
-	private void initClasses (WebDriver driver) {
+
+	private void initClasses(WebDriver driver) {
 		landingPage = new LandingPage(driver);
+		setYourLocation = new SetYourLocation(driver);
+		buildYourToyotaPage = new BuildYourToyotaPage(driver);
+		findADealerPage = new FindADealerPage(driver);
 	}
-	
+
 	private void initDriver(String driverName) {
 		switch (driverName) {
 		case CHROME:
@@ -76,24 +77,10 @@ public class BaseClass {
 			break;
 		}
 	}
-	
+
 	@AfterMethod
 	public void tearUp() {
 		driver.quit();
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
