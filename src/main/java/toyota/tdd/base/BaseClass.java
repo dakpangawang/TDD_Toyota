@@ -7,6 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -29,9 +30,10 @@ public class BaseClass {
 	protected FindADealerPage findADealerPage;
 	ReadProperties enVar = new ReadProperties();
 
-	@BeforeMethod // pre-condition
-	public void setUpDriver() {
-		String browser = enVar.getProperty(BROWSER);
+	@Parameters("browser")
+	@BeforeMethod 
+	public void setUpDriver(String browser) {
+//		String browser = enVar.getProperty(BROWSER);
 		String url = enVar.getProperty(URL);
 		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
 		long implicitlyWait = enVar.getNumProperty(IMPLICIT_Wait);
