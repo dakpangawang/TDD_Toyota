@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import static toyota.tdd.common.CommonActions.*;
 
+
 public class LandingPage {
 	
 	public LandingPage(WebDriver driver) {

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import static toyota.tdd.common.CommonWaits.*;
 
 public class SetYourLocation {
 
@@ -26,7 +27,8 @@ public class SetYourLocation {
 		validate(setYourLocationPageTitle, expectedTitle);
 	}
 
-	public void enterZipCode() {
+	public void enterZipCode(WebDriver driver) {
+		explicitWaitByElementClickable(driver, zipCodeInput);
 		insert(zipCodeInput, "11373");
 	}
 	

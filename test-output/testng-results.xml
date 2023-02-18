@@ -1,117 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="3" total="4" passed="0" failed="0" skipped="1">
   <reporter-output>
-    <line>
-      <![CDATA[Validating --> Actual : ***Explore All Vehicles***. Expected: ***Explore All Vehicles ***<br>]]>
-    </line>
-    <line>
-      <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //img[@data-aa-link-text='Find A Dealer']'--> has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Validating --> Actual : ***SET YOUR LOCATION***. Expected: ***SET YOUR LOCATION ***<br>]]>
-    </line>
-    <line>
-      <![CDATA[11373 <-------- This value has been passed into -->[[ChromeDriver: chrome on WINDOWS (918d762fc334d92eac80abe451aeaa50)] -> xpath: //input[@name='zipcode']]<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (918d762fc334d92eac80abe451aeaa50)] -> xpath: //button[normalize-space(text())='Submit']]--> has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Validating --> Actual : ***Find a Dealer by ZIP Code, City & State or Dealer Name***. Expected: ***Find a Dealer by ZIP Code, City & State or Dealer Name ***<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (918d762fc334d92eac80abe451aeaa50)] -> xpath: //button[@data-form-type='REQUEST_QUOTE']]--> has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Validating --> Actual : ***Explore All Vehicles***. Expected: ***Explore All Vehicles ***<br>]]>
-    </line>
-    <line>
-      <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Build & Price']'--> has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Validating --> Actual : ***SET YOUR LOCATION***. Expected: ***SET YOUR LOCATION ***<br>]]>
-    </line>
-    <line>
-      <![CDATA[11373 <-------- This value has been passed into -->[[ChromeDriver: chrome on WINDOWS (9a0832042c421a5f4d4096b2b8ff0cd4)] -> xpath: //input[@name='zipcode']]<br>]]>
-    </line>
-    <line>
-      <![CDATA[[[ChromeDriver: chrome on WINDOWS (9a0832042c421a5f4d4096b2b8ff0cd4)] -> xpath: //button[normalize-space(text())='Submit']]--> has been clicked<br>]]>
-    </line>
-    <line>
-      <![CDATA[Validating --> Actual : ***Build Your Toyota***. Expected: ***Build Your Toyota ***<br>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2023-02-04T15:45:25 GMT-05:00" name="Suite" finished-at="2023-02-04T15:46:06 GMT-05:00" duration-ms="41314">
+  <suite started-at="2023-02-17T22:47:13 GMT-05:00" name="Suite" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="2105">
     <groups>
     </groups>
-    <test started-at="2023-02-04T15:45:25 GMT-05:00" name="regression" finished-at="2023-02-04T15:46:06 GMT-05:00" duration-ms="41314">
+    <test started-at="2023-02-17T22:47:13 GMT-05:00" name="test" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="2105">
       <class name="toyota.tdd.test.auto.BuildPriceTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@5a45133e]" started-at="2023-02-04T15:45:47 GMT-05:00" name="setUpDriver" finished-at="2023-02-04T15:45:50 GMT-05:00" duration-ms="3490" status="PASS">
+        <test-method is-config="true" signature="initExtentReport()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:12 GMT-05:00" name="initExtentReport" finished-at="2023-02-17T22:47:13 GMT-05:00" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initExtentReport -->
+        <test-method is-config="true" signature="startExtentReport(java.lang.reflect.Method)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:13 GMT-05:00" name="startExtentReport" finished-at="2023-02-17T22:47:13 GMT-05:00" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void toyota.tdd.test.auto.BuildPriceTest.buldAndPriceTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtentReport -->
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:13 GMT-05:00" name="setUpDriver" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="2044" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.By$ByClassName.<init>(By.java:310)
+at org.openqa.selenium.By.className(By.java:100)
+at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:58)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:46)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+at toyota.tdd.objects.CamryLEHybridPage.<init>(CamryLEHybridPage.java:14)
+at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:55)
+at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="buldAndPriceTest()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@5a45133e]" started-at="2023-02-04T15:45:50 GMT-05:00" name="buldAndPriceTest" finished-at="2023-02-04T15:46:06 GMT-05:00" duration-ms="15820" status="PASS">
+        <test-method signature="buldAndPriceTest()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="buldAndPriceTest" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
+Driver info: driver.version: unknown
+at org.openqa.selenium.By$ByClassName.<init>(By.java:310)
+at org.openqa.selenium.By.className(By.java:100)
+at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:58)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.<init>(DefaultElementLocator.java:46)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+at toyota.tdd.objects.CamryLEHybridPage.<init>(CamryLEHybridPage.java:14)
+at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:55)
+at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:43)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
-            <line>
-              <![CDATA[Validating --> Actual : ***Explore All Vehicles***. Expected: ***Explore All Vehicles ***<br>]]>
-            </line>
-            <line>
-              <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //img[@alt='Build & Price']'--> has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Validating --> Actual : ***SET YOUR LOCATION***. Expected: ***SET YOUR LOCATION ***<br>]]>
-            </line>
-            <line>
-              <![CDATA[11373 <-------- This value has been passed into -->[[ChromeDriver: chrome on WINDOWS (9a0832042c421a5f4d4096b2b8ff0cd4)] -> xpath: //input[@name='zipcode']]<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (9a0832042c421a5f4d4096b2b8ff0cd4)] -> xpath: //button[normalize-space(text())='Submit']]--> has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Validating --> Actual : ***Build Your Toyota***. Expected: ***Build Your Toyota ***<br>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- buldAndPriceTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@5a45133e]" started-at="2023-02-04T15:46:06 GMT-05:00" name="tearUp" finished-at="2023-02-04T15:46:06 GMT-05:00" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="getResult" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="tearUp" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="closeReport" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeReport -->
       </class> <!-- toyota.tdd.test.auto.BuildPriceTest -->
-      <class name="toyota.tdd.test.findADealer.FindADealerTest">
-        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:toyota.tdd.test.findADealer.FindADealerTest@32502377]" started-at="2023-02-04T15:45:25 GMT-05:00" name="setUpDriver" finished-at="2023-02-04T15:45:29 GMT-05:00" duration-ms="4239" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method signature="createFindADealerTest()[pri:0, instance:toyota.tdd.test.findADealer.FindADealerTest@32502377]" started-at="2023-02-04T15:45:29 GMT-05:00" name="createFindADealerTest" finished-at="2023-02-04T15:45:47 GMT-05:00" duration-ms="17345" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Validating --> Actual : ***Explore All Vehicles***. Expected: ***Explore All Vehicles ***<br>]]>
-            </line>
-            <line>
-              <![CDATA[Proxy element for: DefaultElementLocator 'By.xpath: //img[@data-aa-link-text='Find A Dealer']'--> has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Validating --> Actual : ***SET YOUR LOCATION***. Expected: ***SET YOUR LOCATION ***<br>]]>
-            </line>
-            <line>
-              <![CDATA[11373 <-------- This value has been passed into -->[[ChromeDriver: chrome on WINDOWS (918d762fc334d92eac80abe451aeaa50)] -> xpath: //input[@name='zipcode']]<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (918d762fc334d92eac80abe451aeaa50)] -> xpath: //button[normalize-space(text())='Submit']]--> has been clicked<br>]]>
-            </line>
-            <line>
-              <![CDATA[Validating --> Actual : ***Find a Dealer by ZIP Code, City & State or Dealer Name***. Expected: ***Find a Dealer by ZIP Code, City & State or Dealer Name ***<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on WINDOWS (918d762fc334d92eac80abe451aeaa50)] -> xpath: //button[@data-form-type='REQUEST_QUOTE']]--> has been clicked<br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- createFindADealerTest -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:toyota.tdd.test.findADealer.FindADealerTest@32502377]" started-at="2023-02-04T15:45:47 GMT-05:00" name="tearUp" finished-at="2023-02-04T15:45:47 GMT-05:00" duration-ms="193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearUp -->
-      </class> <!-- toyota.tdd.test.findADealer.FindADealerTest -->
-    </test> <!-- regression -->
+    </test> <!-- test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -3,14 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="toyota.tdd.test.findADealer.FindADealerTest">
+      <class name="toyota.tdd.test.auto.BuildPriceTest">
         <methods>
-          <include name="createFindADealerTest"/>
+          <include name="initExtentReport"/>
+          <include name="closeReport"/>
+          <include name="test01"/>
+          <include name="startExtentReport"/>
           <include name="setUpDriver"/>
           <include name="tearUp"/>
-          <include name="setUpSuite"/>
+          <include name="getResult"/>
         </methods>
-      </class> <!-- toyota.tdd.test.findADealer.FindADealerTest -->
+      </class> <!-- toyota.tdd.test.auto.BuildPriceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

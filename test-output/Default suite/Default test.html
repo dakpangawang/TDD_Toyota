@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Feb 04 15:32:01 EST 2023</td>
+<td>Started on:</td><td>Thu Feb 16 23:45:26 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21183 ms)</td>
+<tr><td>Total time:</td><td>4 seconds (4412 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,31 +67,263 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='toyota.tdd.test.findADealer.FindADealerTest.createFindADealerTest()'><b>createFindADealerTest</b><br>Test class: toyota.tdd.test.findADealer.FindADealerTest<br/>
-<a href="#Output-541248718" onClick='toggleBox("Output-541248718", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-541248718" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-541248718">
-Validating --> Actual : ***Explore All Vehicles***. Expected: ***Explore All Vehicles ***<br><br/>
-Proxy element for: DefaultElementLocator 'By.xpath: //img[@data-aa-link-text='Find A Dealer']'--> has been clicked<br><br/>
-Validating --> Actual : ***SET YOUR LOCATION***. Expected: ***SET YOUR LOCATION ***<br><br/>
-11373 <-------- This value has been passed into -->[[ChromeDriver: chrome on WINDOWS (0619cedc1a4ac6a50df85470cd19ccdb)] -> xpath: //input[@name='zipcode']]<br><br/>
-[[ChromeDriver: chrome on WINDOWS (0619cedc1a4ac6a50df85470cd19ccdb)] -> xpath: //button[normalize-space(text())='Submit']]--> has been clicked<br><br/>
-Validating --> Actual : ***Find a Dealer by ZIP Code, City & State or Dealer Name***. Expected: ***Find a Dealer by ZIP Code, City & State or Dealer Name ***<br><br/>
-[[ChromeDriver: chrome on WINDOWS (0619cedc1a4ac6a50df85470cd19ccdb)] -> xpath: //button[@data-form-type='REQUEST_QUOTE']]--> has been clicked<br><br/>
-</div>
-</td>
+<td title='toyota.tdd.test.auto.BuildPriceTest.setUpDriver()'><b>setUpDriver</b><br>Test class: toyota.tdd.test.auto.BuildPriceTest</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+	at toyota.tdd.objects.CamryLEHybridPage.&lt;init&gt;(CamryLEHybridPage.java:14)
+	at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:57)
+	at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace764826684", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace764826684'><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+	at toyota.tdd.objects.CamryLEHybridPage.&lt;init&gt;(CamryLEHybridPage.java:14)
+	at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:57)
+	at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>toyota.tdd.test.auto.BuildPriceTest@6221a451</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='toyota.tdd.test.auto.BuildPriceTest.getResult()'><b>getResult</b><br>Test class: toyota.tdd.test.auto.BuildPriceTest</td>
 <td></td>
-<td>16</td>
-<td>toyota.tdd.test.findADealer.FindADealerTest@73e9cf30</td></tr>
+<td>0</td>
+<td>toyota.tdd.test.auto.BuildPriceTest@6221a451</td></tr>
+<tr>
+<td title='toyota.tdd.test.auto.BuildPriceTest.tearUp()'><b>tearUp</b><br>Test class: toyota.tdd.test.auto.BuildPriceTest</td>
+<td></td>
+<td>0</td>
+<td>toyota.tdd.test.auto.BuildPriceTest@6221a451</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='toyota.tdd.test.auto.BuildPriceTest.test01()'><b>test01</b><br>Test class: toyota.tdd.test.auto.BuildPriceTest</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+	at toyota.tdd.objects.CamryLEHybridPage.&lt;init&gt;(CamryLEHybridPage.java:14)
+	at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:57)
+	at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1780298277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1780298277'><pre>org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:310)
+	at org.openqa.selenium.By.className(By.java:100)
+	at org.openqa.selenium.support.AbstractFindByBuilder.buildByFromShortFindBy(AbstractFindByBuilder.java:43)
+	at org.openqa.selenium.support.FindBy$FindByBuilder.buildIt(FindBy.java:85)
+	at org.openqa.selenium.support.pagefactory.Annotations.buildBy(Annotations.java:79)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:58)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.&lt;init&gt;(DefaultElementLocator.java:46)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory.createLocator(DefaultElementLocatorFactory.java:33)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:57)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:111)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:103)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
+	at toyota.tdd.objects.CamryLEHybridPage.&lt;init&gt;(CamryLEHybridPage.java:14)
+	at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:57)
+	at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:65)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:381)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:319)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:803)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:589)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:808)
+	at org.testng.TestRunner.run(TestRunner.java:603)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.runSuites(TestNG.java:1092)
+	at org.testng.TestNG.run(TestNG.java:1060)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>toyota.tdd.test.auto.BuildPriceTest@6221a451</td></tr>
 </table><p>
 </body>
 </html>

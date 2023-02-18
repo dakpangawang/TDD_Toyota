@@ -14,7 +14,7 @@ public class ParameterisedBuildPriceTest extends BaseClass{
 		landingPage.validateLandingPageTitle(landingPageTitle);
 		landingPage.clickBuildAndPrice();
 		setYourLocation.validateSetYourLocationPageTitle(setYourLocationPageTitle);
-		setYourLocation.enterZipCode();
+		setYourLocation.enterZipCode(driver);
 		setYourLocation.clickSubmit();
 		buildYourToyotaPage.validateBuildYourToyotaPageTitle(buildYourToyotaTitle);
 	}
@@ -26,7 +26,7 @@ public class ParameterisedBuildPriceTest extends BaseClass{
 		landingPage.validateLandingPageTitle(autoData.getLandingPageTitle());
 		landingPage.clickBuildAndPrice();
 		setYourLocation.validateSetYourLocationPageTitle(autoData.getSetYourLocationPageTitle());
-		setYourLocation.enterZipCode();
+		setYourLocation.enterZipCode(driver);
 		setYourLocation.clickSubmit();
 		buildYourToyotaPage.validateBuildYourToyotaPageTitle(autoData.getBuildYourToyotaTitle());
 	}
