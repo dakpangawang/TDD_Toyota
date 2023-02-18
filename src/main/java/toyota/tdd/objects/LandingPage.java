@@ -5,31 +5,39 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import toyota.tdd.common.CommonActions;
+import static toyota.tdd.common.CommonActions.*;
+
 
 public class LandingPage {
-	public LandingPage (WebDriver driver) {
+	
+	public LandingPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
-	
-	@FindBy (xpath = "//h2[text()='Explore All Vehicles']")
+
+	@FindBy(xpath = "//h2[text()='Explore All Vehicles']")
 	WebElement landingPageTitle;
-	
-	@FindBy (xpath = "//img[@alt='Build & Price']")
+
+	@FindBy(xpath = "//img[@alt='Build & Price']")
 	WebElement buildAndPriceBtn;
-	
-	@FindBy (xpath = "//input[@name='zipcode']")
-	WebElement zipCodeInput;
-	
-	@FindBy (xpath = "//button[normalize-space(text())='Submit']")
+
+	@FindBy(xpath = "//button[normalize-space(text())='Submit']")
 	WebElement submitBtn;
 	
-	public void validateLandingPageTitle (String expectedTitle) {
-		CommonActions.validate(landingPageTitle, expectedTitle);
+	@FindBy (xpath = "//img[@data-aa-link-text='Find A Dealer']")
+	WebElement finADealer;
+
+	public void validateLandingPageTitle(String expectedTitle) {
+		validate(landingPageTitle, expectedTitle);
+	}
+
+	public void clickBuildAndPrice() {
+		click(buildAndPriceBtn);
 	}
 	
-	public void clickBuildAndPrice () {
-		CommonActions.click(buildAndPriceBtn);
+	public void clickFindADealer () {
+		click(finADealer);
 	}
+
+	
 
 }
