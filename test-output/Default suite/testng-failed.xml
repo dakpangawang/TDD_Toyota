@@ -7,8 +7,8 @@
         <methods>
           <include name="initExtentReport"/>
           <include name="closeReport"/>
-          <include name="test01"/>
           <include name="startExtentReport"/>
+          <include name="buldAndPriceTest"/>
           <include name="setUpDriver"/>
           <include name="tearUp"/>
           <include name="getResult"/>

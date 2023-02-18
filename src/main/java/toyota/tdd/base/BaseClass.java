@@ -32,22 +32,22 @@ public class BaseClass extends ExtentListener{
 	protected CamryLEHybridPage camryLEHybridPage;
   	ReadProperties enVar = new ReadProperties();
 
-	@Parameters("browser")
+	//@Parameters("browser")
 	@BeforeMethod 
-	public void setUpDriver(String browser) {
-//		String browser = enVar.getProperty(BROWSER);
-		String url = enVar.getProperty(URL);
-		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
-		long implicitlyWait = enVar.getNumProperty(IMPLICIT_WAIT);
+	public void setUpDriver() {
+		String browser = enVar.getProperty(BROWSER);
 		initDriver(browser);
-		initClasses(driver);
+		String url = enVar.getProperty(URL);
 		driver.get(url);
 		driver.manage().window().maximize();
+		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
+		long implicitlyWait = enVar.getNumProperty(IMPLICIT_WAIT);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadWait));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
+		initClasses();
 	}
 
-	private void initClasses(WebDriver driver) {
+	private void initClasses() {
 		landingPage = new LandingPage(driver);
 		setYourLocation = new SetYourLocation(driver);
 		buildYourToyotaPage = new BuildYourToyotaPage(driver);

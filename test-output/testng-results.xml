@@ -2,16 +2,16 @@
 <testng-results ignored="3" total="4" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-17T22:47:13 GMT-05:00" name="Suite" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="2105">
+  <suite started-at="2023-02-18T00:20:56 GMT-05:00" name="Default suite" finished-at="2023-02-18T00:21:05 GMT-05:00" duration-ms="8788">
     <groups>
     </groups>
-    <test started-at="2023-02-17T22:47:13 GMT-05:00" name="test" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="2105">
+    <test started-at="2023-02-18T00:20:56 GMT-05:00" name="Default test" finished-at="2023-02-18T00:21:05 GMT-05:00" duration-ms="8788">
       <class name="toyota.tdd.test.auto.BuildPriceTest">
-        <test-method is-config="true" signature="initExtentReport()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:12 GMT-05:00" name="initExtentReport" finished-at="2023-02-17T22:47:13 GMT-05:00" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="initExtentReport()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@2e6a8155]" started-at="2023-02-18T00:20:55 GMT-05:00" name="initExtentReport" finished-at="2023-02-18T00:20:56 GMT-05:00" duration-ms="486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initExtentReport -->
-        <test-method is-config="true" signature="startExtentReport(java.lang.reflect.Method)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:13 GMT-05:00" name="startExtentReport" finished-at="2023-02-17T22:47:13 GMT-05:00" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="startExtentReport(java.lang.reflect.Method)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@2e6a8155]" started-at="2023-02-18T00:20:56 GMT-05:00" name="startExtentReport" finished-at="2023-02-18T00:20:56 GMT-05:00" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,14 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtentReport -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:13 GMT-05:00" name="setUpDriver" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="2044" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="setUpDriver()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@2e6a8155]" started-at="2023-02-18T00:20:56 GMT-05:00" name="setUpDriver" finished-at="2023-02-18T00:21:05 GMT-05:00" duration-ms="8622" status="FAIL">
           <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
               <![CDATA[Compound class names not permitted
@@ -59,7 +52,7 @@ at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
 at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
 at toyota.tdd.objects.CamryLEHybridPage.<init>(CamryLEHybridPage.java:14)
 at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:55)
-at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:43)
+at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -98,7 +91,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="buldAndPriceTest()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="buldAndPriceTest" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="0" status="SKIP">
+        <test-method signature="buldAndPriceTest()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@2e6a8155]" started-at="2023-02-18T00:21:05 GMT-05:00" name="buldAndPriceTest" finished-at="2023-02-18T00:21:05 GMT-05:00" duration-ms="2" status="SKIP">
           <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
               <![CDATA[Compound class names not permitted
@@ -128,7 +121,7 @@ at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:90)
 at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:78)
 at toyota.tdd.objects.CamryLEHybridPage.<init>(CamryLEHybridPage.java:14)
 at toyota.tdd.base.BaseClass.initClasses(BaseClass.java:55)
-at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:43)
+at toyota.tdd.base.BaseClass.setUpDriver(BaseClass.java:47)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -167,19 +160,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buldAndPriceTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="getResult" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult,java.lang.reflect.Method)[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@2e6a8155]" started-at="2023-02-18T00:21:05 GMT-05:00" name="getResult" finished-at="2023-02-18T00:21:05 GMT-05:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="tearUp()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="tearUp" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearUp()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@2e6a8155]" started-at="2023-02-18T00:21:05 GMT-05:00" name="tearUp" finished-at="2023-02-18T00:21:05 GMT-05:00" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearUp -->
-        <test-method is-config="true" signature="closeReport()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@537f60bf]" started-at="2023-02-17T22:47:15 GMT-05:00" name="closeReport" finished-at="2023-02-17T22:47:15 GMT-05:00" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="closeReport()[pri:0, instance:toyota.tdd.test.auto.BuildPriceTest@2e6a8155]" started-at="2023-02-18T00:21:05 GMT-05:00" name="closeReport" finished-at="2023-02-18T00:21:06 GMT-05:00" duration-ms="1400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeReport -->
       </class> <!-- toyota.tdd.test.auto.BuildPriceTest -->
-    </test> <!-- test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

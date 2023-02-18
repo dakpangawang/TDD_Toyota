@@ -26,6 +26,8 @@ public class LandingPage {
 	@FindBy (xpath = "//img[@data-aa-link-text='Find A Dealer']")
 	WebElement finADealer;
 
+	
+	
 	public void validateLandingPageTitle(String expectedTitle) {
 		validate(landingPageTitle, expectedTitle);
 	}
@@ -37,7 +39,7 @@ public class LandingPage {
 	public void clickFindADealer () {
 		click(finADealer);
 	}
-
+   
 	
 
 }
