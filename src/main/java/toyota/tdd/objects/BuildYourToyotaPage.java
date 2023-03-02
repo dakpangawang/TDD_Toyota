@@ -4,13 +4,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import static toyota.tdd.common.CommonActions.*;
+
+import toyota.tdd.common.CommonActions;
 
 
 public class BuildYourToyotaPage {
 	
+	CommonActions actions;
+	
 	public BuildYourToyotaPage (WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		actions = new CommonActions(driver);
 	}
 	
 	@FindBy (css = ".ttac-headline.align-center")
@@ -21,11 +25,11 @@ public class BuildYourToyotaPage {
 	
 	
 	public void validateBuildYourToyotaPageTitle (String expectTile) {
-		validate(buildYourToyotaPageTitle, expectTile);
+		actions.validate(buildYourToyotaPageTitle, expectTile);
 	}
 	
 	public void clickCamryHybrid2023 () {
-		click(camryHybrid2023Car);
+		actions.click(camryHybrid2023Car);
 	}
 
 }

@@ -32,22 +32,22 @@ public class BaseClass extends ExtentListener{
 	protected CamryLEHybridPage camryLEHybridPage;
   	ReadProperties enVar = new ReadProperties();
 
-	//@Parameters("browser")
+	@Parameters("browser")
 	@BeforeMethod 
-	public void setUpDriver() {
-		String browser = enVar.getProperty(BROWSER);
+	public void setUpDriver(String browser) {
+//		String browser = enVar.getProperty(BROWSER);
 		initDriver(browser);
 		String url = enVar.getProperty(URL);
 		driver.get(url);
+		initClasses(driver);
 		driver.manage().window().maximize();
 		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
 		long implicitlyWait = enVar.getNumProperty(IMPLICIT_WAIT);
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadWait));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
-		initClasses();
 	}
 
-	private void initClasses() {
+	private void initClasses(WebDriver driver) {
 		landingPage = new LandingPage(driver);
 		setYourLocation = new SetYourLocation(driver);
 		buildYourToyotaPage = new BuildYourToyotaPage(driver);
@@ -90,7 +90,7 @@ public class BaseClass extends ExtentListener{
 	public void getResult(ITestResult result, Method method) {
 		if(result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, PASSED);
-		} else if (result.getStatus() == ITestResult.FAILURE) {
+	   	} else if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, FAILED);
 			test.addScreenCaptureFromPath(captureScreenShot(driver, method.getName()));
 		} else if (result.getStatus() == ITestResult.SKIP) {

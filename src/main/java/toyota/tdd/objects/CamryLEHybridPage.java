@@ -5,13 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static toyota.tdd.common.CommonActions.*;
-import static toyota.tdd.common.CommonWaits.*;
+import toyota.tdd.common.CommonActions;
 
 public class CamryLEHybridPage {
 	
+	CommonActions actions;
+	
 	public CamryLEHybridPage (WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		actions = new CommonActions(driver);
 	}
 	
 	@FindBy (xpath = "//h2[text()='2023 Camry LE Hybrid']")
@@ -20,21 +22,19 @@ public class CamryLEHybridPage {
 	@FindBy (xpath = "//button[@class='tcom-step-button next button primary']")
 	WebElement nextStepBtn;
 	
-	@FindBy (className = "tcom-raq-cta button primary raq-modal-cta button-01")
+	@FindBy (css = ".tcom-raq-cta.button.primary.raq-modal-cta.button-01")
 	WebElement requestAQuoteBtn;
 	
 	public void validateCamryLEHybridPageTitle (String expectedTitle) {
-		validate(camryLEHybridPageTitle, expectedTitle);
+		actions.validate(camryLEHybridPageTitle, expectedTitle);
 	}
 	
-	public void clickNextStepBtn(WebDriver driver) {
-		explicitWaitByElementVisilbility(driver, nextStepBtn);
-		click(nextStepBtn);
+	public void clickNextStepBtn() {
+		actions.click(nextStepBtn);
 	}
 	
-	public void clickRequestAQuoteBtn(WebDriver driver) { 
-		explicitWaitByElementVisilbility(driver, requestAQuoteBtn);
-		click(requestAQuoteBtn);
+	public void clickRequestAQuoteBtn() { 
+		actions.click(requestAQuoteBtn);
 	}
 	
 

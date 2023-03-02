@@ -10,21 +10,20 @@ public class BuildPriceTest extends BaseClass {
 
 	@Test(enabled = true)
 	public void buldAndPriceTest() {
-		System.out.println("I am in landing page");
-	//	landingPage.validateLandingPageTitle("Explore All Vehicles");
-	//	landingPage.clickBuildAndPrice();
-	/*	setYourLocation.validateSetYourLocationPageTitle("SET YOUR LOCATION");
-		setYourLocation.enterZipCode(driver);
+		landingPage.validateLandingPageTitle("Explore All Vehicles");
+		landingPage.clickBuildAndPrice();
+		setYourLocation.validateSetYourLocationPageTitle("SET YOUR LOCATION");
+		setYourLocation.enterZipCode();
 		setYourLocation.clickSubmit();
 		buildYourToyotaPage.validateBuildYourToyotaPageTitle("Build Your Toyota");
         buildYourToyotaPage.clickCamryHybrid2023();
 	    camryLEHybridPage.validateCamryLEHybridPageTitle("2023 Camry LE Hybrid");
-	    camryLEHybridPage.clickNextStepBtn(driver);
-	    camryLEHybridPage.clickNextStepBtn(driver);
-	    camryLEHybridPage.clickNextStepBtn(driver);
-	    camryLEHybridPage.clickNextStepBtn(driver);
-	    camryLEHybridPage.clickNextStepBtn(driver);
-	    camryLEHybridPage.clickRequestAQuoteBtn(driver); */
+	    camryLEHybridPage.clickNextStepBtn();
+	    camryLEHybridPage.clickNextStepBtn();
+	    camryLEHybridPage.clickNextStepBtn();
+	    camryLEHybridPage.clickNextStepBtn();
+	    camryLEHybridPage.clickNextStepBtn();
+	    camryLEHybridPage.clickRequestAQuoteBtn(); 
 	}
 
 	@Test(enabled = false)

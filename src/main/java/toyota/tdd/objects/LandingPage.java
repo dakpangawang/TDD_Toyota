@@ -1,17 +1,22 @@
 package toyota.tdd.objects;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static toyota.tdd.common.CommonActions.*;
-
+import toyota.tdd.common.CommonActions;
 
 public class LandingPage {
 	
+	CommonActions actions;
+	JavascriptExecutor js;
+	
 	public LandingPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		actions = new CommonActions(driver);
+		js = (JavascriptExecutor) driver;
 	}
 
 	@FindBy(xpath = "//h2[text()='Explore All Vehicles']")
@@ -23,23 +28,15 @@ public class LandingPage {
 	@FindBy(xpath = "//button[normalize-space(text())='Submit']")
 	WebElement submitBtn;
 	
-	@FindBy (xpath = "//img[@data-aa-link-text='Find A Dealer']")
-	WebElement finADealer;
-
-	
-	
 	public void validateLandingPageTitle(String expectedTitle) {
-		validate(landingPageTitle, expectedTitle);
+		actions.validate(landingPageTitle, expectedTitle);
 	}
 
 	public void clickBuildAndPrice() {
-		click(buildAndPriceBtn);
+		js.executeScript("arguments[0].click();", buildAndPriceBtn);
+//		actions.click(buildAndPriceBtn);
 	}
-	
-	public void clickFindADealer () {
-		click(finADealer);
-	}
-   
+
 	
 
 }
