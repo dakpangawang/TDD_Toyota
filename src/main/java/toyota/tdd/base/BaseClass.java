@@ -36,13 +36,13 @@ public class BaseClass extends ExtentListener{
 	@BeforeMethod 
 	public void setUpDriver(String browser) {
 //		String browser = enVar.getProperty(BROWSER);
+		initDriver(browser);
 		String url = enVar.getProperty(URL);
+		driver.get(url);
+		initClasses(driver);
+		driver.manage().window().maximize();
 		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
 		long implicitlyWait = enVar.getNumProperty(IMPLICIT_WAIT);
-		initDriver(browser);
-		initClasses(driver);
-		driver.get(url);
-		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadWait));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
 	}
@@ -90,7 +90,7 @@ public class BaseClass extends ExtentListener{
 	public void getResult(ITestResult result, Method method) {
 		if(result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, PASSED);
-		} else if (result.getStatus() == ITestResult.FAILURE) {
+	   	} else if (result.getStatus() == ITestResult.FAILURE) {
 			test.log(Status.FAIL, FAILED);
 			test.addScreenCaptureFromPath(captureScreenShot(driver, method.getName()));
 		} else if (result.getStatus() == ITestResult.SKIP) {
