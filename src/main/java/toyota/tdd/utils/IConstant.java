@@ -12,7 +12,11 @@ public interface IConstant {
 	String URL = "url";
 	
 	String EXPLICIT_WAIT = "explicitWait";
-	String IMPLICIT_Wait = "implicitlyWait";
+	String IMPLICIT_WAIT = "implicitlyWait";
 	String PAGELOAD_WAIT = "pageloadTime";
+	
+	String PASSED = "Test PASSED";
+	String FAILED = "Test FAILED";
+	String SKIPPED = "Test SKIPPED";
 
 }

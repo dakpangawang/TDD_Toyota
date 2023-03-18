@@ -4,12 +4,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import static toyota.tdd.common.CommonActions.*;
+
+import toyota.tdd.common.CommonActions;
 
 public class FindADealerPage {
 	
+	CommonActions actions;
+	
 	public FindADealerPage (WebDriver driver) {
 		PageFactory.initElements(driver, this);
+		actions = new CommonActions(driver);
 	}
 	
 	@FindBy (xpath = "//h1[text()='by ZIP Code, City & State or Dealer Name']")
@@ -19,11 +23,11 @@ public class FindADealerPage {
 	WebElement requestAQuoteBtn;
 	
 	public void validateFindADealerPageTitle (String expectedTitle) {
-		validate(findADealerPageTitle, expectedTitle);
+		actions.validate(findADealerPageTitle, expectedTitle);
 	}
 	
 	public void clickrequestAQuoteBtn () {
-		click(requestAQuoteBtn);
+		actions.click(requestAQuoteBtn);
 	}
  
 }
