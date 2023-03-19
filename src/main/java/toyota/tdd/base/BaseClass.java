@@ -36,14 +36,13 @@ public class BaseClass extends ExtentListener{
 	@Parameters({"browser","env"})
 	@BeforeMethod 
 	public void setUpDriver(String browser, String env) {
-//		String browser = enVar.getProperty(BROWSER);
-		initDriver(browser);
 		String givenUrl = enVar.getProperty(env+"Url");
-		driver.get(givenUrl);
-		initClasses(driver);
-		driver.manage().window().maximize();
 		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
 		long implicitlyWait = enVar.getNumProperty(IMPLICIT_WAIT);
+		initDriver(browser);
+		initClasses(driver);
+		driver.get(givenUrl);
+		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(pageLoadWait));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitlyWait));
 	}
