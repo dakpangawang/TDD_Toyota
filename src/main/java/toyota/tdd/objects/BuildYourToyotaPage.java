@@ -20,7 +20,7 @@ public class BuildYourToyotaPage {
 	@FindBy (css = ".ttac-headline.align-center")
 	WebElement buildYourToyotaPageTitle;
 	
-	@FindBy (xpath = "//div[@data-aa-link-text='build 2023 camry']//following-sibling::div[@data-aa-link-text='build 2022 camryhybrid']//following-sibling::div[@data-aa-link-text='build 2023 camryhybrid']")
+	@FindBy (xpath = "//div[@data-aa-link-text='build 2023 corollahatchback']//following-sibling::div[@data-aa-link-text='build 2023 camry']//following-sibling::div[@data-aa-link-text='build 2023 camryhybrid']")
 	WebElement camryHybrid2023Car;
 	
 	
