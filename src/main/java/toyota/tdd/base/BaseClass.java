@@ -1,4 +1,4 @@
-package toyota.tdd.base;
+ package toyota.tdd.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -33,13 +33,13 @@ public class BaseClass extends ExtentListener{
 	protected CamryLEHybridPage camryLEHybridPage;
   	ReadProperties enVar = new ReadProperties();
 
-	@Parameters("browser")
+	@Parameters({"browser","env"})
 	@BeforeMethod 
-	public void setUpDriver(String browser) {
+	public void setUpDriver(String browser, String env) {
 //		String browser = enVar.getProperty(BROWSER);
 		initDriver(browser);
-		String url = enVar.getProperty(URL);
-		driver.get(url);
+		String givenUrl = enVar.getProperty(env+"Url");
+		driver.get(givenUrl);
 		initClasses(driver);
 		driver.manage().window().maximize();
 		long pageLoadWait = enVar.getNumProperty(PAGELOAD_WAIT);
