@@ -8,7 +8,7 @@ import toyota.tdd.reporting.Logs;
 
 public class BuildPriceTest extends BaseClass {
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void buldAndPriceTest() {
 		landingPage.validateLandingPageTitle("Explore All Vehicles");
 		landingPage.clickBuildAndPrice();
@@ -26,7 +26,7 @@ public class BuildPriceTest extends BaseClass {
 	    camryLEHybridPage.clickRequestAQuoteBtn(); 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void test01() {
 		Logs.log("Test01");
 	}
