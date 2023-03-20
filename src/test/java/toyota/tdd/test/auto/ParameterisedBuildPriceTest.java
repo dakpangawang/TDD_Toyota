@@ -2,7 +2,6 @@ package toyota.tdd.test.auto;
 
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import toyota.tdd.base.BaseClass;
 import toyota.tdd.utils.AutoData;
 
